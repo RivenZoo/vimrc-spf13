@@ -1,3 +1,6 @@
 if !exists('g:spf13_bundle_groups')
     let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'python', 'javascript', 'html', 'misc', 'go', 'rust']
 endif
+
+" fzf: If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
