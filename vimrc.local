@@ -1,0 +1,20 @@
+colorscheme gruvbox
+let g:spf13_no_autochdir = 1
+
+" racer-rust {
+    if isdirectory(expand("~/.vim/bundle/vim-racer/"))
+        au FileType rust nmap rd <Plug>(rust-def)
+        au FileType rust nmap rds <Plug>(rust-def-split)
+        au FileType rust nmap rdx <Plug>(rust-def-vertical)
+        au FileType rust nmap <leader>rdoc <Plug>(rust-doc)
+    endif
+"}
+
+" GoLang {
+    if count(g:spf13_bundle_groups, 'go')
+        au FileType go nmap <Leader>gdoc <Plug>(go-doc)
+        au FileType go nmap <Leader>gdv <Plug>(go-doc-vertical)
+    endif
+    " }
+
+

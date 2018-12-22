@@ -1,0 +1,8 @@
+" UnBundle 'bling/vim-bufferline'
+" Rust {
+    if count(g:spf13_bundle_groups, 'rust')
+        Bundle 'racer-rust/vim-racer'
+    endif
+" }
+
+
