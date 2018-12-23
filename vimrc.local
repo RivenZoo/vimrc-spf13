@@ -27,6 +27,7 @@ endif
 
 " GoLang {
     if count(g:spf13_bundle_groups, 'go')
+        let g:go_fmt_autosave = 1
         au FileType go nmap <Leader>gdoc <Plug>(go-doc)
         au FileType go nmap <Leader>gdv <Plug>(go-doc-vertical)
     endif
