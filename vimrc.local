@@ -33,4 +33,9 @@ endif
     endif
     " }
 
+" TagBar {
+        if isdirectory(expand("~/.vim/bundle/tagbar/"))
+            let g:tagbar_autofocus = 1
+        endif
+    "}
 
